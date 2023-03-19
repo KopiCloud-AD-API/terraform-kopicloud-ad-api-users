@@ -1,6 +1,6 @@
-#######################################
-## KopiCloud AD API - Create AD User ##
-#######################################
+##################################################
+## KopiCloud AD API - Create and Update AD User ##
+##################################################
 
 # Create AD User
 resource "kopicloud_user" "test" {
@@ -16,7 +16,7 @@ resource "kopicloud_user" "test" {
   email_address = "robert.smith@kopicloud.net"
 }
 
-# Returns Create AD User Result
+# Returns AD User Result
 output "OUTPUT_new_user" {
   description = "Created User"
   value       = resource.kopicloud_user.test
